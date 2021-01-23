@@ -29,7 +29,7 @@ public class DemoApplication {
 	}
 
 	@Bean
-	public CommandLineRunner run(RestTemplate restTemplate) {
+	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		return new CommandLineRunner() {
 			@SuppressWarnings("unchecked")
 			@Override
