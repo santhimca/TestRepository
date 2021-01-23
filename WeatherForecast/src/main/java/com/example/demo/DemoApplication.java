@@ -41,7 +41,7 @@ public class DemoApplication {
 				String fooResourceUrl = "https://api.weather.gov/points/" + commandlineArguments;// 39.7456,-97.0892";
 				logger.info("fooResourceUrl : " + fooResourceUrl);
 				ResponseEntity<String> response = restTemplate.getForEntity(fooResourceUrl, String.class);
-				logger.info("Argument : " + response.getBody());
+				//logger.info("Argument : " + response.getBody());
 				
 
 				JSONParser parser = new JSONParser(response.getBody());
