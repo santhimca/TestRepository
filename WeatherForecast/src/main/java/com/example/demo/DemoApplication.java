@@ -29,7 +29,7 @@ public class DemoApplication {
 	}
 
 	@Bean
-	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
+	public CommandLineRunner run(RestTemplate restTemplate) {
 		return new CommandLineRunner() {
 			@SuppressWarnings("unchecked")
 			@Override
@@ -38,6 +38,7 @@ public class DemoApplication {
 				for (int i = 0; i < args.length; i++) {
 					commandlineArguments = args[i];
 				}
+				try {
 				String fooResourceUrl = "https://api.weather.gov/points/" + commandlineArguments;// 39.7456,-97.0892";
 				logger.info("fooResourceUrl : " + fooResourceUrl);
 				ResponseEntity<String> response = restTemplate.getForEntity(fooResourceUrl, String.class);
@@ -78,6 +79,11 @@ public class DemoApplication {
 				logger.info("forcastrl forcastrl : " + forcastrl);
 				ResponseEntity<String> responseForcast = restTemplate.getForEntity(forcastrl, String.class);
 				logger.info("responseForcast : " + responseForcast.getBody());
+				} catch (IllegalStateException ise) {
+					logger.info("Exception : " + ise.getMessage());
+				} catch (Exception ex) {
+					logger.info("Exception : " + ex.getMessage());
+				}
 			}
 		};
 	}
