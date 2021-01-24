@@ -1,0 +1,264 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -117.75022749999999,
+                    33.586097500000001
+                ],
+                [
+                    -117.74570019999999,
+                    33.563828600000001
+                ],
+                [
+                    -117.71892619999998,
+                    33.567604799999998
+                ],
+                [
+                    -117.72344839999998,
+                    33.589874299999998
+                ],
+                [
+                    -117.75022749999999,
+                    33.586097500000001
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "updated": "2021-01-23T10:09:15+00:00",
+        "units": "us",
+        "forecastGenerator": "BaselineForecastGenerator",
+        "generatedAt": "2021-01-23T18:52:29+00:00",
+        "updateTime": "2021-01-23T10:09:15+00:00",
+        "validTimes": "2021-01-23T04:00:00+00:00/P7DT21H",
+        "elevation": {
+            "value": 181.96559999999999,
+            "unitCode": "unit:m"
+        },
+        "periods": [
+            {
+                "number": 1,
+                "name": "Today",
+                "startTime": "2021-01-23T10:00:00-08:00",
+                "endTime": "2021-01-23T18:00:00-08:00",
+                "isDaytime": true,
+                "temperature": 55,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "0 to 5 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/tsra_sct,70?size=medium",
+                "shortForecast": "Chance Showers And Thunderstorms",
+                "detailedForecast": "A chance of showers and thunderstorms. Mostly cloudy, with a high near 55. Southwest wind 0 to 5 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible."
+            },
+            {
+                "number": 2,
+                "name": "Tonight",
+                "startTime": "2021-01-23T18:00:00-08:00",
+                "endTime": "2021-01-24T06:00:00-08:00",
+                "isDaytime": false,
+                "temperature": 40,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "0 to 5 mph",
+                "windDirection": "E",
+                "icon": "https://api.weather.gov/icons/land/night/tsra_hi,50/tsra_hi,20?size=medium",
+                "shortForecast": "Scattered Showers And Thunderstorms",
+                "detailedForecast": "Scattered showers and thunderstorms before 4am. Partly cloudy, with a low around 40. East wind 0 to 5 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible."
+            },
+            {
+                "number": 3,
+                "name": "Sunday",
+                "startTime": "2021-01-24T06:00:00-08:00",
+                "endTime": "2021-01-24T18:00:00-08:00",
+                "isDaytime": true,
+                "temperature": 56,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "0 to 10 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/day/sct/rain_showers,50?size=medium",
+                "shortForecast": "Mostly Sunny then Scattered Rain Showers",
+                "detailedForecast": "Scattered rain showers after 4pm. Mostly sunny, with a high near 56. South wind 0 to 10 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible."
+            },
+            {
+                "number": 4,
+                "name": "Sunday Night",
+                "startTime": "2021-01-24T18:00:00-08:00",
+                "endTime": "2021-01-25T06:00:00-08:00",
+                "isDaytime": false,
+                "temperature": 41,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/night/rain_showers,80?size=medium",
+                "shortForecast": "Widespread Rain Showers",
+                "detailedForecast": "Widespread rain showers. Mostly cloudy, with a low around 41. Southwest wind 5 to 10 mph. Chance of precipitation is 80%. New rainfall amounts between a half and three quarters of an inch possible."
+            },
+            {
+                "number": 5,
+                "name": "Monday",
+                "startTime": "2021-01-25T06:00:00-08:00",
+                "endTime": "2021-01-25T18:00:00-08:00",
+                "isDaytime": true,
+                "temperature": 53,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 25 mph",
+                "windDirection": "W",
+                "icon": "https://api.weather.gov/icons/land/day/rain_showers,50/rain_showers,40?size=medium",
+                "shortForecast": "Scattered Rain Showers",
+                "detailedForecast": "Scattered rain showers. Partly sunny, with a high near 53. West wind 5 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 50%. New rainfall amounts between a quarter and half of an inch possible."
+            },
+            {
+                "number": 6,
+                "name": "Monday Night",
+                "startTime": "2021-01-25T18:00:00-08:00",
+                "endTime": "2021-01-26T06:00:00-08:00",
+                "isDaytime": false,
+                "temperature": 37,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 20 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/night/rain_showers,30/rain_showers,20?size=medium",
+                "shortForecast": "Scattered Rain Showers",
+                "detailedForecast": "Scattered rain showers before 4am. Partly cloudy, with a low around 37. Chance of precipitation is 30%."
+            },
+            {
+                "number": 7,
+                "name": "Tuesday",
+                "startTime": "2021-01-26T06:00:00-08:00",
+                "endTime": "2021-01-26T18:00:00-08:00",
+                "isDaytime": true,
+                "temperature": 56,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 56."
+            },
+            {
+                "number": 8,
+                "name": "Tuesday Night",
+                "startTime": "2021-01-26T18:00:00-08:00",
+                "endTime": "2021-01-27T06:00:00-08:00",
+                "isDaytime": false,
+                "temperature": 40,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/night/bkn/rain_showers?size=medium",
+                "shortForecast": "Mostly Cloudy then Slight Chance Rain Showers",
+                "detailedForecast": "A slight chance of rain showers after 4am. Mostly cloudy, with a low around 40."
+            },
+            {
+                "number": 9,
+                "name": "Wednesday",
+                "startTime": "2021-01-27T06:00:00-08:00",
+                "endTime": "2021-01-27T18:00:00-08:00",
+                "isDaytime": true,
+                "temperature": 58,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 15 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/day/rain_showers?size=medium",
+                "shortForecast": "Chance Rain Showers",
+                "detailedForecast": "A chance of rain showers. Mostly cloudy, with a high near 58."
+            },
+            {
+                "number": 10,
+                "name": "Wednesday Night",
+                "startTime": "2021-01-27T18:00:00-08:00",
+                "endTime": "2021-01-28T06:00:00-08:00",
+                "isDaytime": false,
+                "temperature": 44,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "10 to 15 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/night/rain_showers?size=medium",
+                "shortForecast": "Chance Rain Showers",
+                "detailedForecast": "A chance of rain showers. Mostly cloudy, with a low around 44."
+            },
+            {
+                "number": 11,
+                "name": "Thursday",
+                "startTime": "2021-01-28T06:00:00-08:00",
+                "endTime": "2021-01-28T18:00:00-08:00",
+                "isDaytime": true,
+                "temperature": 60,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "10 to 15 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/day/rain_showers?size=medium",
+                "shortForecast": "Chance Rain Showers",
+                "detailedForecast": "A chance of rain showers. Mostly cloudy, with a high near 60."
+            },
+            {
+                "number": 12,
+                "name": "Thursday Night",
+                "startTime": "2021-01-28T18:00:00-08:00",
+                "endTime": "2021-01-29T06:00:00-08:00",
+                "isDaytime": false,
+                "temperature": 44,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/night/rain_showers?size=medium",
+                "shortForecast": "Chance Rain Showers",
+                "detailedForecast": "A chance of rain showers. Mostly cloudy, with a low around 44."
+            },
+            {
+                "number": 13,
+                "name": "Friday",
+                "startTime": "2021-01-29T06:00:00-08:00",
+                "endTime": "2021-01-29T18:00:00-08:00",
+                "isDaytime": true,
+                "temperature": 60,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/day/rain_showers?size=medium",
+                "shortForecast": "Chance Rain Showers",
+                "detailedForecast": "A chance of rain showers. Partly sunny, with a high near 60."
+            },
+            {
+                "number": 14,
+                "name": "Friday Night",
+                "startTime": "2021-01-29T18:00:00-08:00",
+                "endTime": "2021-01-30T06:00:00-08:00",
+                "isDaytime": false,
+                "temperature": 43,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "0 to 10 mph",
+                "windDirection": "W",
+                "icon": "https://api.weather.gov/icons/land/night/rain_showers?size=medium",
+                "shortForecast": "Slight Chance Rain Showers",
+                "detailedForecast": "A slight chance of rain showers before 4am. Mostly cloudy, with a low around 43."
+            }
+        ]
+    }
+}
